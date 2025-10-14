@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#"
+     xml:base="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3"
+     xmlns:bg3="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#belongsToClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#belongsToClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#canCast -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#canCast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasRace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasRace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#classPreference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#classPreference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">classPreference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasPreference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasPreference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasPreference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hpAtLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hpAtLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#level">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#maxHP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#maxHP">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#raceConMod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#raceConMod">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Player">
+        <rdfs:label xml:lang="en">Player</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Gale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Gale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#human"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#control"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>геил</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#astarion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#astarion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#elf"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#damage"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</level>
+        <rdfs:label>астарион</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#barbarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#barbarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>beginner</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</maxHP>
+        <rdfs:label>варвар</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#bard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#bard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>beginner</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</maxHP>
+        <rdfs:label>бард</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#bless -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#bless">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>beginner</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</maxHP>
+        <rdfs:label>монах</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+        <rdfs:label>контроль</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cure_wounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cure_wounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#damage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#damage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+        <rdfs:label>дамагер</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#drow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#drow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</raceConMod>
+        <rdfs:label>дроу</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#druid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#druid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>intermediate</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</maxHP>
+        <rdfs:label>друид</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#dwarf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#dwarf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</raceConMod>
+        <rdfs:label>дварф</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#eldritch_blast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#eldritch_blast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#elf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#elf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</raceConMod>
+        <rdfs:label>эльф</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#fighter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#fighter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>beginner</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</maxHP>
+        <rdfs:label>боец</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#fireball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#fireball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#githyanki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#githyanki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</raceConMod>
+        <rdfs:label>гитьянки</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_elf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_elf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</raceConMod>
+        <rdfs:label>полуэльф</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_orc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_orc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</raceConMod>
+        <rdfs:label>полуорк</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#halfling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#halfling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</raceConMod>
+        <rdfs:label>полурослик</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#halsin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#halsin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#druid"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#elf"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#support"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>хальсин</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#healer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#healer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+        <rdfs:label>хилер</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#human -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#human">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</raceConMod>
+        <rdfs:label>человек</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#jaheira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#jaheira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#druid"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_elf"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#support"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>джахейра</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#karlach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#karlach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#barbarian"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tiefling"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tank"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>карлах</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#laezel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#laezel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#fighter"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#githyanki"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tank"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>лаэзель</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#mage_armor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#mage_armor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#magic_missile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#magic_missile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#minsc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#minsc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#ranger"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#human"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#damage"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>минск</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#minthara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#minthara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#drow"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#healer"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>минтара</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#mizora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#mizora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tiefling"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#control"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>мизора</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#ranger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#ranger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>intermediate</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</maxHP>
+        <rdfs:label>следопыт</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#rogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#rogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>intermediate</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</maxHP>
+        <rdfs:label>вор</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#shadowheart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#shadowheart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#cleric"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#half_elf"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#support"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>шедоухарт</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#sorcerer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#sorcerer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>intermediate</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</maxHP>
+        <rdfs:label>лучник</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#support -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#support">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+        <rdfs:label>поддержка</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Role"/>
+        <rdfs:label>танк</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tiefling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#tiefling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Race"/>
+        <raceConMod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</raceConMod>
+        <rdfs:label>тифлинг</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>advanced</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</maxHP>
+        <rdfs:label>чародей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wild_shape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wild_shape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+        <belongsToClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#druid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+        <classPreference>advanced</classPreference>
+        <maxHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</maxHP>
+        <rdfs:label>колдун</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wyll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#wyll">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+        <hasClass rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#warlock"/>
+        <hasRace rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#human"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#control"/>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</level>
+        <rdfs:label>уилл</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/hp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/mod">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/lvl">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/base">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/total">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Class"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Spell"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#belongsToClass"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasClass"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#canCast"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#Character"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasClass"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#maxHP"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/cl"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/hp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hasRace"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#raceConMod"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/r"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/mod"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#level"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/lvl"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/base"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/hp"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/mod"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/total"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/lvl"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/base"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3#hpAtLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chenqing/ontologies/2025/9/bg3/total"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
